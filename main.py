@@ -29,5 +29,3 @@ def get_character_count(text):
 
 
 main()
-
-#I don't understand how any of this works
