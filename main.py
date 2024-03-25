@@ -7,7 +7,7 @@ def main():
     print("")
     print(f"--- Begin report for {book_path} ---")
     print("")
-    print(f"{word_count} words found in text")
+    print(f"{word_count:,} words found in text")
     print("")
     for character in character_count:
         print(f"The '{character}' character was found " 
