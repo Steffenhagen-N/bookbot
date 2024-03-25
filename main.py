@@ -7,11 +7,12 @@ def main():
     print("")
     print(f"--- Begin report for {book_path} ---")
     print("")
-    print(f"{word_count:,} words found in text")
+    print("\033[36m" f"{word_count:,} " "\033[37m" "words found in text")
     print("")
     for character in character_count:
-        print(f"The '{character}' character was found " 
-              f"{character_count[character]:,} times")
+        print("The " "\033[32m" f"{character} " "\033[37m" "character "
+              "was found " "\033[36m" 
+              f"{character_count[character]:,} " "\033[37m" "times")
     print("")
     print("--- End report ---")
 
