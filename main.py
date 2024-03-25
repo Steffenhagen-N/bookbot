@@ -19,12 +19,14 @@ def get_character_count(text):
     lower_text_words = lower_text.split()
     for word in lower_text_words:
         for letter in word:
-            if letter in char_dic:
-                char_dic[letter] += 1
-            else:
-                char_dic[letter] = 1
+            if letter.isalpha():
+                if letter in char_dic:
+                    char_dic[letter] += 1
+                else:
+                    char_dic[letter] = 1
 
-    return char_dic
+    sorted_dictionary = dict(sorted(char_dic.items(), key=lambda x: x[1], reverse=True))
+    return sorted_dictionary
     
 
 
